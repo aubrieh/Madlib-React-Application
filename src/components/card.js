@@ -7,8 +7,6 @@ class Card extends Component {
             <div className='card'>
                 { Input('Color') }
                 { Input('Plural Noun') }
-                { Input('Color') }
-                { Input('Color') }
             </div>
         )
     }
