@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Input = (title, state, onChange, name) => {
-	const Input = ({title, state, name}, onChange) => {
-	    return (
-	        <div className="input">
-	        <div key={name} className="input">
-	            <input name={name} value={state} onChange={onChange}/>
-	            <label>{title}</label>
-	        </div>
+const Input = ({title, state, name}, onChange, index) => {
+    return (
+        <div key={index} className="input">
+            <input placeholder={title} name={name} value={state} onChange={onChange}/>
+        </div>
+    )
+}
 
 export default Input;
