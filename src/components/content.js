@@ -19,9 +19,7 @@ import React, { Component } from 'react';
 		}
 	    render() {
 			const data = this.props.data;
-			for(key in data) {
-				console.log(key);
-			}
+			
 	        return (
 	            <div className="card__content">
                 <p className="content">
